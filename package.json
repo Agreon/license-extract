@@ -1,0 +1,37 @@
+{
+  "name": "license-extract",
+  "description": "Universal License Extraction",
+  "version": "0.0.1",
+  "author": "Daniel Huth",
+  "license": "MIT",
+  "main": "./dist/command.js",
+  "bin": "./dist/command.js",
+  "preferGlobal": true,
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "yarn clean; tsc; cp src/command.js dist/command.js",
+    "clean": "rimraf ./dist; rimraf ./tsconfig.tsbuildinfo",
+    "lint": "tslint --project ."
+  },
+  "dependencies": {
+    "@types/node": "^13.7.0",
+    "chalk": "^3.0.0",
+    "fs-extra": "^8.1.0",
+    "minimist": "^1.2.0",
+    "showdown": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "@types/minimist": "^1.2.0",
+    "@types/showdown": "^1.9.3",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-etc": "^1.7.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}
