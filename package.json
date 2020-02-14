@@ -1,7 +1,7 @@
 {
   "name": "license-extract",
   "description": "Universal License Extraction",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Daniel Huth",
   "license": "MIT",
   "main": "./dist/command.js",
